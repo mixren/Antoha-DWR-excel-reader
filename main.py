@@ -1,6 +1,7 @@
 import os
 import tkinter as tk
-import generator_manager as gm
+import managers.generator_manager as gm
+import managers.text_file_manager as tfm
 import tkinter.filedialog as fd
 
 TITLE = "Antoha DWR Excel Reader"
@@ -17,6 +18,7 @@ def generate():
     path = ent_select.get()
     lst_excels = get_all_excel_files(path)
     gm.generate(lst_excels)
+    tfm.open_generated_list_txt()
     print("End.")
 
 def get_all_excel_files(path: str):

@@ -1,9 +1,9 @@
-import excel_manager as em
+import managers.excel_manager as em
 from returns.pipeline import is_successful
-from excel_model import ExcelModel
-from list_excel_model import ListExcelModel
+from models.excel_model import ExcelModel
+from models.list_excel_model import ListExcelModel
 from tabulate import tabulate
-import text_file_manager as tfm
+import managers.text_file_manager as tfm
 
 def generate(lst_excels: list):
     all_models = ListExcelModel()

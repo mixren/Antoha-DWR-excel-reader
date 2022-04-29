@@ -18,3 +18,9 @@ def update_with(*args):
             f.write("\n")
     except Exception as e:
         return print(f"Can't save info to txt file. {e}")
+
+def open_generated_list_txt():
+    try:
+        os.startfile(os.path.abspath(PATH_TXT))
+    except Exception as e:
+        print(f"Can't open a file. {e}")

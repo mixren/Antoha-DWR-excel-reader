@@ -1,4 +1,4 @@
-from excel_model import ExcelModel
+from models.excel_model import ExcelModel
 
 
 class ListExcelModel:
